@@ -1,13 +1,13 @@
 volumes:
   persistence: false
-  
+
 affinity:
   anti_affinity: false
 
 components:
   autorecovery: false
   pulsar_manager: false
-  toolset: false
+  toolset: true
 
 kube-prometheus-stack:
   enabled: false
@@ -51,7 +51,7 @@ broker:
       memory: 512Mi
       cpu: 0.125
   configData:
-    autoSkipNonRecoverableData: "true"
+    autoSkipNonRecoverableData: 'true'
     # managedLedgerDefaultEnsembleSize: "1"
     # managedLedgerDefaultWriteQuorum: "1"
     # managedLedgerDefaultAckQuorum: "1"
@@ -65,4 +65,4 @@ proxy:
       memory: 128Mi
       cpu: 0.1
   ingress:
-    enabled: false
+    enabled: true
