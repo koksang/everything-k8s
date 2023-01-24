@@ -48,8 +48,8 @@ broker:
     enabled: false
   resources:
     requests:
-      memory: 512Mi
-      cpu: 0.125
+      memory: 2Gi
+      cpu: 0.25
   configData:
     autoSkipNonRecoverableData: 'true'
     # managedLedgerDefaultEnsembleSize: "1"
